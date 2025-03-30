@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Enrollment Form</h2>
+        <form id="studentForm">
+            <label for="rollNo">Roll No:</label>
+            <input type="text" id="rollNo" required onfocusout="checkRollNo()"><br><br>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required disabled><br><br>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" required disabled><br><br>
+
+            <label for="birthDate">Birth Date:</label>
+            <input type="date" id="birthDate" required disabled><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" required disabled><br><br>
+
+            <label for="enrollmentDate">Enrollment Date:</label>
+            <input type="date" id="enrollmentDate" required disabled><br><br>
+
+            <button type="button" id="saveBtn" onclick="saveStudent()" disabled>Save</button>
+            <button type="button" id="updateBtn" onclick="updateStudent()" disabled>Update</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
